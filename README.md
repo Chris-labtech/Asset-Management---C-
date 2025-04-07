@@ -1,8 +1,8 @@
-# Asset-Management---C#
+# Asset-Management .NET
 
 The Asset Tracker Manangement Ssytem is an application used to track the storage location and value of assets.
 
-This system was built using C# for front and backend, and SQL.
+This system was built using .NET, and SQL.
 
 Features:
 
