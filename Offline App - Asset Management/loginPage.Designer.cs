@@ -55,7 +55,7 @@
             // 
             // loginPageLeftPanel
             // 
-            this.loginPageLeftPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.loginPageLeftPanel.BackColor = System.Drawing.Color.Silver;
             this.loginPageLeftPanel.Controls.Add(this.label3);
             this.loginPageLeftPanel.Controls.Add(this.label2);
             this.loginPageLeftPanel.Controls.Add(this.pictureBox1);
@@ -96,7 +96,7 @@
             // 
             // loginPageRightPanel
             // 
-            this.loginPageRightPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.loginPageRightPanel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.loginPageRightPanel.Controls.Add(this.txtOutputUsername);
             this.loginPageRightPanel.Controls.Add(this.txtOutputPassword);
             this.loginPageRightPanel.Controls.Add(this.label8);
