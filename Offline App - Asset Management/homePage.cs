@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Offline_App___Asset_Management
 {
-    public partial class Form1 : Form
+    public partial class homePage : Form
     {
-        public Form1()
+        public homePage()
         {
             InitializeComponent();
         }
