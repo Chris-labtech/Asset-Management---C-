@@ -12,9 +12,12 @@ namespace Offline_App___Asset_Management
 {
     public partial class homePage : Form
     {
+        // Declare Additional Views/Forms
+        dashboard dashboard;
         public homePage()
         {
             InitializeComponent();
+
         }
 
         // If this image is clicked, the side panel will either expand or close
@@ -84,6 +87,28 @@ namespace Offline_App___Asset_Management
                 }
             }
         }
+        // Open Dashboard when clicked
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            if(dashboard == null)
+            {
+                dashboard = new dashboard();
+                dashboard.FormClosed += Dashboard_FormClosed;
+                dashboard.MdiParent = this;
+                dashboard.Show();
+            }
+            else
+            {
+                dashboard.Activate();
+            }
 
+            
+        }
+
+        private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //  throw new NotImplementedException();
+            dashboard = null;
+        }
     }
 }
