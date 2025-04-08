@@ -15,5 +15,6 @@ Features:
 
 How to use:
 
-    Clone the repo to your local directory.
-    Build and run the application in a C# IDE.
+    Because this is a Work-in-Progress.
+    1.    Clone the repo to your local directory.
+    2.    Build, Clean and Run the application in a C# IDE.
