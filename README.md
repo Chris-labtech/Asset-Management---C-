@@ -4,9 +4,10 @@ The Asset Tracker Manangement Ssytem is an application used to track the storage
 
 This system was built using C#, and SQL.
 
-There are two main applications
-    1. Offline Application    - Develop with .NET
-    2. Online Application     - Develop with ASP.NET/ MVC Pattern   
+There are three applications
+    1. Offline Application    - Develop with .NET.
+    2. Online Application     - Develop with ASP.NET/ MVC Pattern.
+    3. Android Application    - Develop with Kotlin.
 
 Features:
 
