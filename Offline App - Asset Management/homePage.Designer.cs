@@ -163,6 +163,7 @@
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // sidePanelTransition
             // 
@@ -181,6 +182,7 @@
             this.ClientSize = new System.Drawing.Size(1158, 595);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "homePage";
             this.Text = "homePage";
             this.panel1.ResumeLayout(false);
