@@ -12,15 +12,17 @@ namespace AssetManagement_DataBase
     {
         public DbSet<Asset> Assets { get; set; }
 
+        //  Internal Recommendation to use a primary constructor.
         public AssetDbContext(DbContextOptions<AssetDbContext> options)
-            : base(options)
+          : base(options)
         {
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                // Password as per pgAdmin is '1234'
+                // Password set in pgAdmin is '1234'
                 optionsBuilder.UseNpgsql("Host=localhost;Database=AssetDb;Username=postgres;Password=1234");
             }
         }
