@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Assets";
+}
+
+@model List<AssetManagement_CommonLibrary.Models.Asset>
+
+<h2>Assets</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Value</th>
+            <th>Currency</th>
+            <th>Location</th>
+            <th>Date Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in Model)
+        {
+            <tr>
+                <td>@asset.Id</td>
+                <td>@asset.Name</td>
+                <td>@asset.Category</td>
+                <td>@asset.Value</td>
+                <td>@asset.Currency</td>
+                <td>@asset.Location</td>
+                <td>@asset.DateCreatedInDb.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
