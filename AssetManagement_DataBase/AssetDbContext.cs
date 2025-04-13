@@ -20,6 +20,7 @@ namespace AssetManagement_DataBase
         {
             if (!optionsBuilder.IsConfigured)
             {
+                // Password as per pgAdmin is '1234'
                 optionsBuilder.UseNpgsql("Host=localhost;Database=AssetDb;Username=postgres;Password=1234");
             }
         }
