@@ -57,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1158, 56);
+            this.panel1.Size = new System.Drawing.Size(1334, 56);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -92,7 +92,7 @@
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 56);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(210, 539);
+            this.sidePanel.Size = new System.Drawing.Size(210, 533);
             this.sidePanel.TabIndex = 1;
             // 
             // menuPanel
@@ -178,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 595);
+            this.ClientSize = new System.Drawing.Size(1334, 589);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.panel1);
             this.Name = "homePage";
