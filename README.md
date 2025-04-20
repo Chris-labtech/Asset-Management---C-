@@ -1,13 +1,12 @@
 # Asset-Management Csharp
 
-The Asset Tracker Manangement Ssytem is an application used to track the storage location and value of assets.
+The Asset Tracker Manangement is an application used to track the storage location and value of assets.
 
-There are Five branches that deal with
-    1. Offline Application    - Develop with .NET.
-    2. Web Frontend           - ASP.NET/ MVC Pattern.
-    3. Android App            - Kotlin.
-    4. Backend API            - ASP.NET Core Web API.
-    5. Database               - C# 
+The file directories are broken down into 
+    1. Console Application    - Develop with .NET.
+    2. Web Application        - ASP.NET/ MVC Pattern.
+    3. API                    - C#
+    4. Database               - C# 
 
 Features:
     - Swagger is being used to test API functions. 
