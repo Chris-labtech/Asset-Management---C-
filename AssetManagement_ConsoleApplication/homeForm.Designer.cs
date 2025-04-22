@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -47,10 +48,11 @@
             this.btnAssets_B = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnAssets_A = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.defaultPanel = new System.Windows.Forms.Panel();
             this.timerMenuExpand = new System.Windows.Forms.Timer(this.components);
             this.timerLeftPanelExpand = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.dashboardPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -60,6 +62,8 @@
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            this.defaultPanel.SuspendLayout();
+            this.dashboardPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +78,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(976, 54);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(172, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Asset Management | Alpha";
             // 
             // panel10
             // 
@@ -237,14 +253,15 @@
             this.btnAssets_A.Text = "Assets_A";
             this.btnAssets_A.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // defaultPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(175, 54);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(801, 484);
-            this.panel3.TabIndex = 2;
+            this.defaultPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.defaultPanel.Controls.Add(this.dashboardPanel);
+            this.defaultPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.defaultPanel.Location = new System.Drawing.Point(175, 54);
+            this.defaultPanel.Name = "defaultPanel";
+            this.defaultPanel.Size = new System.Drawing.Size(801, 484);
+            this.defaultPanel.TabIndex = 2;
             // 
             // timerMenuExpand
             // 
@@ -256,24 +273,31 @@
             this.timerLeftPanelExpand.Interval = 10;
             this.timerLeftPanelExpand.Tick += new System.EventHandler(this.timerLeftPanelExpand_Tick);
             // 
-            // label1
+            // dashboardPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(172, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Asset Management | Alpha";
+            this.dashboardPanel.BackColor = System.Drawing.Color.RosyBrown;
+            this.dashboardPanel.Controls.Add(this.label2);
+            this.dashboardPanel.Location = new System.Drawing.Point(7, 7);
+            this.dashboardPanel.Name = "dashboardPanel";
+            this.dashboardPanel.Size = new System.Drawing.Size(787, 472);
+            this.dashboardPanel.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(263, 201);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 31);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "DashBoard";
             // 
             // homeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 538);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.defaultPanel);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panel1);
             this.Name = "homeForm";
@@ -288,6 +312,9 @@
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
+            this.defaultPanel.ResumeLayout(false);
+            this.dashboardPanel.ResumeLayout(false);
+            this.dashboardPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,7 +323,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelLeft;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel defaultPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button btnMenu;
@@ -316,5 +343,7 @@
         private System.Windows.Forms.Timer timerMenuExpand;
         private System.Windows.Forms.Timer timerLeftPanelExpand;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel dashboardPanel;
+        private System.Windows.Forms.Label label2;
     }
 }
